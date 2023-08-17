@@ -1,3 +1,20 @@
 .intro-section-left {
     background-color: #dcc1ab;
 }
+
+.ofert-block {
+    background-color: #f5f0ec;
+    margin-bottom: 160;
+}
+
+.card {
+    border-radius: 10%;
+    border: none;
+}
+
+.card-link {
+    color: #8dad97;
+    border-bottom: solid;
+    text-decoration: none;
+}
+
