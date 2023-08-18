@@ -26,3 +26,20 @@
 a:hover {
     color: #1b5b31;
 }
+
+.logo {
+    overflow: hidden;
+    animation-name: slidein;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-duration: 0.9s;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: -220px;
+    }
+    to {
+        margin-left: 0px;
+    }
+}
