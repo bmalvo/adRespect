@@ -18,3 +18,11 @@
     text-decoration: none;
 }
 
+.card:hover {
+    box-shadow: 2px 2px 2px #1b5b31;
+    transform: translateY(-10px);
+}
+
+a:hover {
+    color: #1b5b31;
+}
