@@ -19,7 +19,7 @@
 }
 
 .card:hover {
-    box-shadow: 2px 2px 2px #1b5b31;
+    box-shadow: 3px 3px 4px #1b5b31;
     transform: translateY(-10px);
 }
 
@@ -42,4 +42,8 @@ a:hover {
     to {
         margin-left: 0px;
     }
+}
+
+.instagram-button:hover {
+    transform: scale(1.1);
 }
