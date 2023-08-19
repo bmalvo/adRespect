@@ -67,3 +67,15 @@ hr {
 .space {
     height: 2px;
 }
+
+.masonry {
+    column-count: 3;
+    column-gap: 4rem;
+    max-width:max-content;
+}
+
+.masonry img {
+    display: block;
+    max-width: 100%;
+    padding-bottom: 2rem;
+}
