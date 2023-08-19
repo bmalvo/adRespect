@@ -235,6 +235,14 @@
 
   <!-- Realization block -->
   <section>
+
+    <div class="full-img" id="fullImgBox">
+      <button class="btn btn-outline-success" id="prev" onclick="prev()">&lt&lt&lt</button>
+      <img class="px-3" src="./gallery/Photo.png" id="fullImg" alt="full-img">
+      <button class="btn btn-outline-success" id="next" onclick="next()">&gt&gt&gt</button>
+      <span id="close" onclick="closeFullImg()">X</span>
+    </div>
+
     <div class="container-fluid" style="background-color: #dcc1ab;">
       <div class="row mb-5 py-5">
         <div class="col-1"></div>
@@ -246,15 +254,15 @@
       <div class="row">
         <div class="col p-0">
           <div class="p-0 container masonry justify-content-between">
-            <img src="./gallery/Photo.png">
-            <img src="./gallery/Photo (1).png">
-            <img src="./gallery/Photo (2).png">
-            <img src="./gallery/Photo (3).png">
-            <img src="./gallery/Photo (4).png">
-            <img src="./gallery/Photo (6).png">
-            <img src="./gallery/Photo (9).png">
-            <img src="./gallery/Photo (7).png">
-            <img src="./gallery/Photo (8).png">
+            <img src="./gallery/Photo.png" onclick="openFullImg(this.src)">
+            <img src="./gallery/Photo (1).png" onclick="openFullImg(this.src)">
+            <img src="./gallery/Photo (2).png" onclick="openFullImg(this.src)">
+            <img src="./gallery/Photo (3).png" onclick="openFullImg(this.src)">
+            <img src="./gallery/Photo (4).png" onclick="openFullImg(this.src)">
+            <img src="./gallery/Photo (6).png" onclick="openFullImg(this.src)">
+            <img src="./gallery/Photo (9).png" onclick="openFullImg(this.src)">
+            <img src="./gallery/Photo (7).png" onclick="openFullImg(this.src)">
+            <img src="./gallery/Photo (8).png" onclick="openFullImg(this.src)">
           </div>
         </div>
       </div>  
@@ -334,7 +342,7 @@
     </div>
   </footer>
 
-    
+    <script src="./script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
             crossorigin="anonymous"></script>    
