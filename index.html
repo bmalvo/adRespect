@@ -13,11 +13,11 @@
 
 <body>
 
-<!-- Navi -->
+<!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light px-5">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="./images/giarddesign.png" class="logo">
+        <img src="./images/giarddesign.png" class="logo" alt="logo firmy">
       </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
                 data-bs-target="#navbarSupportedContent">
@@ -37,7 +37,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link active item-nav" aria-current="page" href="#ofirmie">O firmie</a>
+            <a class="nav-link active item-nav" href="#ofirmie">O firmie</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active item-nav" href="#nasze-realizacje">Realizacje</a>
@@ -46,15 +46,18 @@
             <a class="nav-link active item-nav" href="#kontakt">Kontakt</a>
           </li>
           <li class="nav-item d-flex ps-3 overflow-hidden">
-            <form class="row" id="form-search">
-              <input class="form-control col" type="search" 
-                     placeholder="Szukaj">
-              <button class="col btn btn-outline-success" 
-                      type="submit">Szukaj</button>
+            <form class="row" id="form-search"> <!-- hidden form -->
+              <input class="form-control col" 
+                     type="search" 
+                     placeholder="Co potrzeba?">
+                <button class="col btn btn-outline-success" 
+                        type="submit">Szukaj
+                </button>
             </form>
-            <a class="nav-link active" href="#">
+            <a class="nav-link active" href="#"> <!-- icon for display form-->
               <img src="./images/Icon_01.png" 
-                   class="img-fluid ps-3" 
+                   class="img-fluid ps-3"
+                   alt="ikona lupki" 
                    onclick="goForward()">
             </a>
           </li>
@@ -66,8 +69,7 @@
   <!-- Hero-block -->
   <section>
     <div class="container-fluid">
-      <div class="row ">
-
+      <div class="row">
         <div class="col-sm-12 col-lg-6 intro-section-left d-flex justify-content-center">
           <div class="container-fluid mx-auto my-auto px-5 py-5">
             <div class="row">
@@ -84,30 +86,27 @@
             </div>
             <div class="row">
               <div class="col-sm-10 col-md-6 px-lg-5">
-
-                <!-- <p class="my-2 mx-5"> -->
                   <a href="#kontakt">
                     <button type="button" 
-                    class="btn btn-success rounded-pill float-start">
-                    Skontaktuj się z nami
+                            class="btn btn-success rounded-pill float-start">
+                      Skontaktuj się z nami
+                    </button>
+                  </a>
+              </div>
+              <div class="col-sm-10 col-md-6 pt-3 pt-md-0">
+                <a href="#nasze-realizacje">
+                  <button type="button" 
+                          class="btn btn-outline-success rounded-pill float-start">
+                    <b>Zobacz nasze realizacje</b>
+                    <img src="./images/Vector-intro.png" 
+                         class="img-fluid"
+                         alt="ikonka wektora">
                   </button>
                 </a>
               </div>
-              <div class="col-sm-10 col-md-6 pt-3 pt-md-0">
-
-                <a href="#nasze-realizacje">
-                  <button type="button" 
-                  class="btn btn-outline-success rounded-pill float-start">
-                  <b>Zobacz nasze realizacje</b>
-                  <img src="./images/Vector-intro.png" class="img-fluid">
-                </button>
-              </a>
             </div>
-          </div>
-            <!-- </p> -->
-          </div>
         </div>
-
+      </div>
         <div class="col-sm-12 col-lg-6 p-0">
           <div id="carouselExampleControlsNoTouching" 
                class="carousel slide" 
@@ -149,40 +148,45 @@
       <div class="row align-content-center">
         <div class="col pt-5 pb-5">
           <div style="max-width: 709px;" class="m-0 ms-md-5">
-            
-            <!-- <p class="fs-6 ps-5">oferta</p> -->
             <h2 class="ps-5">Działamy <i>kompleksowo</i></h2>
-            <p class="mt-4 ps-5">Oferujemy kompletną obsługę inwestycji terenów zielonych. 
+            <p class="mt-4 ps-5">
+              Oferujemy kompletną obsługę inwestycji terenów zielonych. 
               Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. 
               Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie,
-              a na każdym etapie posłużymy radą i wieloletnim doświadczeniem.</p>
-            </div>
+              a na każdym etapie posłużymy radą i wieloletnim doświadczeniem.
+            </p>
+          </div>
         </div>
       </div>
       <div class="row ms-5">
         <div class="col">
-          <div class="card mt-2" style="width: 18rem;" id="projekty">
-            <div class="card-body rounded-3">
+          <div class="card mt-3" id="projekty">
+            <div class="card-body">
               <span><img class="img-fluid icon-card p-4 ps-4 " 
-                         src="./images/Icon-card-1.png"></span>
-              <h5 class="card-title  ps-4">Projekty</h5>
-              <p class="card-text  ps-4">
+                         src="./images/Icon-card-1.png"
+                         alt="ikona ołówka">
+              </span>
+              <h5 class="card-title ps-4">Projekty</h5>
+              <p class="card-text ps-4">
                  Zaprojektujemy twój ogród w nowoczesnym 
                  stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.
-                </p>
+              </p>
               <a href="#" type="button" class="card-link m-3 ms-4">
                 <b>Dowiedz się więcej</b> 
-                <img class="img-fluid" src="./images/Vector-card.png">
+                <img class="img-fluid" 
+                     src="./images/Vector-card.png"
+                     alt="ikonka wektora">
               </a>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="col">
-          <div class="card mt-3" style="width: 18rem;" id="wizualizacje">
+          <div class="card mt-3" id="wizualizacje">
             <div class="card-body">
               <span><img class="img-fluid p-4 ps-4" 
-                         src="./images/Icon-card-2.png"></span>
+                         src="./images/Icon-card-2.png"
+                         alt="ikonka oka">
+              </span>
               <h5 class="card-title ps-4">Wizualizacje</h5>
               <p class="card-text ps-4">
                 Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego 
@@ -190,18 +194,20 @@
               </p>
               <a href="#" type="button" class="card-link m-3 ms-4">
                 <b>Dowiedz się więcej</b> 
-                <img class="img-fluid" src="./images/Vector-card.png">
+                <img class="img-fluid" 
+                     src="./images/Vector-card.png"
+                     alt="ikonka wektora">
               </a>
             </div>
           </div>
         </div>
-        </div>
         <div class="col">
-          <div class="col">
-          <div class="card mt-3 mt-md-2" style="width: 18rem;" id="realizacje">
+          <div class="card mt-3" id="realizacje">
             <div class="card-body">
               <span><img class="img-fluid p-4" 
-                         src="./images/Icon-card-3.png"></span>
+                         src="./images/Icon-card-3.png"
+                         alt="ikonka gwiazdek">
+              </span>
               <h5 class="card-title ps-4">Realizacje</h5>
               <p class="card-text ps-4">
                 Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwązań i 
@@ -209,11 +215,12 @@
               </p>
               <a href="#" type="button" class="card-link m-3 ms-4">
                 <b>Zobacz nasze realizacje</b>
-                <img class="img-fluid" src="./images/Vector-card.png">
+                <img class="img-fluid" 
+                     src="./images/Vector-card.png"
+                     alt="ikonka wektora">
               </a>
             </div>
           </div>
-        </div>
         </div>
       </div>
     </div>
@@ -224,13 +231,15 @@
     <div class="container-fluid" id="ofirmie">
       <div class="row">
         <div class="col-sm-12 col-lg-6 p-0 m-0">
-          <img class="w-100" src="./images/Photo-about-company.png">
+          <img class="w-100" 
+               src="./images/Photo-about-company.png"
+               alt="ilustracja ogrodu">
         </div>
-        <div style="background-color: #1b5b31;" 
-        class="col-12 col-lg-6 container d-flex justify-content-center">
-          <div class="mx-auto my-auto px-5" style="color: white;">
-            <!-- <p class="fs-6 ps-5">o firmie</p> -->
-            <h1 class="text-start ps-5 pt-sm-5 pt-lg-0"><i>Tworzymy<br> z pasją</i></h1>
+        <div class="col-12 col-lg-6 container d-flex justify-content-center color-green">
+          <div class="mx-auto my-auto px-5 f-white pt-5 pt-lg-0">
+            <h1 class="text-start ps-5 pt-sm-5 pt-lg-0">
+              <i>Tworzymy<br> z pasją</i>
+            </h1>
             <p class="text-start mt-5 ps-5">
               Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą 
               wykwalifikowani projektanci oraz architekci, ktrych zadaniem jest
@@ -240,10 +249,13 @@
               małoobsługowe, dostosowane do wspólczesnego trybu życia.
               <p class="ps-5 pt-4">
                 <button type="button" 
-                class="btn btn-outline-success rounded-pill" style="color: white;">
-                Poznaj nas bliżej <img class="img-fluid" src="./images/Vector-company.png" style="color: white;">
-              </button>
-            </p>
+                        class="btn btn-outline-success rounded-pill f-white">
+                  Poznaj nas bliżej 
+                    <img class="img-fluid f-white" 
+                         src="./images/Vector-company.png"
+                         alt="ikonka wektora">
+                </button>
+              </p>
             </p>
           </div>
         </div>
@@ -254,45 +266,75 @@
   <!-- Realization block -->
   <section>
 
+    <!-- pop-up feature -->
     <div class="full-img" id="fullImgBox">
-      <button class="btn btn-outline-success" id="prev" onclick="prev()">&lt&lt&lt</button>
-      <img class="px-3" src="./gallery/Photo.png" id="fullImg" alt="full-img">
-      <button class="btn btn-outline-success" id="next" onclick="next()">&gt&gt&gt</button>
+      <button class="btn btn-outline-success" 
+              id="prev" 
+              onclick="prev()">&lt;&lt;&lt;
+      </button>
+      <img class="px-3" src="./gallery/Photo.png" id="fullImg" alt="zdjęcie">
+      <button class="btn btn-outline-success" 
+              id="next" 
+              onclick="next()">&gt;&gt;&gt;
+      </button>
       <span id="close" onclick="closeFullImg()">X</span>
     </div>
+    <!-- pop-up feature -->
 
-    <div class="container-fluid" style="background-color: #dcc1ab;" id="nasze-realizacje">
+    <div class="container-fluid intro-section-left" id="nasze-realizacje">
       <div class="row mb-5 py-5">
         <div class="col-1"></div>
         <div class="col mt-5">
-          <!-- <p class="fs-6">Realizacje</p> -->
           <h2>Nasze <i>projekty</i></h2>
         </div>
       </div>
       <div class="row">
         <div class="col p-0">
           <div class="p-0 container masonry justify-content-between">
-            <img src="./gallery/Photo.png" onclick="openFullImg(this.src)">
-            <img class="img-opacity" src="./gallery/Photo (1).png" 
-                 onclick="openFullImg(this.src)">
-            <span class="more"><img src="./gallery/Photo (2).png" 
-                  onclick="openFullImg(this.src)"></span>
-            <img src="./gallery/Photo (3).png" onclick="openFullImg(this.src)">
-            <img id="trigger" src="./gallery/Photo (4).png" 
-                 onclick="openFullImg(this.src)">
-            <span class="more"><img src="./gallery/Photo (6).png" 
-                  onclick="openFullImg(this.src)"></span>
-            <img src="./gallery/Photo (9).png" onclick="openFullImg(this.src)">
-            <img src="./gallery/Photo (7).png" onclick="openFullImg(this.src)">
-            <span class="more"><img src="./gallery/Photo (8).png" 
-                  onclick="openFullImg(this.src)"></span>
+            <img src="./gallery/Photo.png" 
+                 onclick="openFullImg(this.src)"
+                 alt="fotografia ogrodu">
+            <img class="img-opacity" 
+                 src="./gallery/Photo(1).png" 
+                 onclick="openFullImg(this.src)"
+                 alt="fotografia ogrodu">
+            <span class="more">
+              <img src="./gallery/Photo(2).png" 
+                   onclick="openFullImg(this.src)"
+                   alt="fotografia ogrodu">
+            </span>
+            <img src="./gallery/Photo(3).png" 
+                 onclick="openFullImg(this.src)"
+                 alt="fotografia ogrodu">
+            <img id="trigger" 
+                 src="./gallery/Photo(4).png" 
+                 onclick="openFullImg(this.src)"
+                 alt="fotografia ogrodu">
+            <span class="more">
+              <img src="./gallery/Photo(6).png" 
+                   onclick="openFullImg(this.src)"
+                   alt="fotografia ogrodu">
+            </span>
+            <img src="./gallery/Photo(9).png" 
+                 onclick="openFullImg(this.src)"
+                 alt="fotografia ogrodu">
+            <img src="./gallery/Photo(7).png" 
+                 onclick="openFullImg(this.src)"
+                 alt="fotografia ogrodu">
+            <span class="more">
+              <img src="./gallery/Photo(8).png" 
+                   onclick="openFullImg(this.src)"
+                   alt="fotografia ogrodu">
+            </span>
           </div>
           <div class="d-flex justify-content-center pb-5">
             <button class="btn btn-outline-success rounded-pill" 
                     onclick="myFunction()" 
                     id="myBtn">
                       Rozwiń 
-                      <img src="./images/Vector-intro.png" class="img-fluid">
+                      <img src="./images/Vector-intro.png" 
+                           class="img-fluid"
+                           alt="ikonka wektora">
             </button>
           </div>
         </div>
@@ -302,17 +344,17 @@
 
   <!-- Instagram block -->
   <section>
-    <div class="container d-flex justify-content-center my-5" style="background-color:#1b5b31">
-      <div style="background-color: #1b5b31;">
+    <div class="container d-flex justify-content-center my-5 color-green">
+      <div class="color-green">
         <div class="row my-5">
-          <div class="col-12 col-lg-9 py-5 px-5">
-            <h2 style="color: white;">Zostańmy w kontakcie!</h2>
-            <h2 style="color: white;">Znajdziesz nas na <i>Instagramie!</i></h2>
+          <div class="col-12 col-md-9 py-5 px-5">
+            <h2 class="f-white">Zostańmy w kontakcie!</h2>
+            <h2 class="f-white">Znajdziesz nas na <i>Instagramie.</i></h2>
           </div>
-          <div class="col-12 col-lg-9 ps-5 ps-lg-0  py-5">
-            <h6 style="color: white;" class="py-2">Śledź nasze najnowsze realizacje!</h6>
+          <div class="col-12 col-md-3 ps-5 ps-lg-0 py-5">
+            <h6 class="py-2 f-white">Śledź nasze najnowsze realizacje!</h6>
             <button type="button" 
-                class="btn btn-outline-success rounded-pill instagram-button px-3" style="color:#1b5b31; background-color: white;">
+                class="btn btn-outline-success rounded-pill instagram-button px-3">
                 Instagram
             </button>
           </div>
@@ -323,30 +365,34 @@
 
   <!-- Footer block -->
   <footer>
-    <div class="container-fluid pt-5 pb-2" style="background-color: #111111;" id="kontakt">
+    <div class="container-fluid pt-5 pb-2 footer-bg" id="kontakt">
       <div class="container my-5 pe-0 ps-0">
         <div class="row mb-4 mt-4">
-          <div class="col-12 col-md-4 col-lg-6 pt-2">
-            <img class="img-fluid" src="./images/logo-footer-1.png">
+          <div class="col-12 col-md-4 col-lg-6 mt-2">
+            <img class="img-fluid" 
+                 src="./images/logo-footer-1.png"
+                 alt="logo firmy">
           </div>
           <div class="col-12 col-md-4 col-lg-8 pe-0 text-sm-start text-md-end pt-1">
-            <p style="color: white;" class="pe-3 d-inline">
-              Daj znać co możemy dla Ciebie zrobić!</p>
+            <p class="pe-3 d-inline f-white">
+              Daj znać co możemy dla Ciebie zrobić!
+            </p>
           </div>
           <div class="col-12 col-md-4 col-lg-2">
             <a href="mailto:giarddesign@kontakt.pl">
               <button type="button" 
-              class="btn btn-success rounded-pill float-end">
-              Skontaktuj się z nami
-            </button>
-          </a>
+                      class="btn btn-success rounded-pill float-end">
+                Skontaktuj się z nami
+              </button>
+            </a>
           </div>
         </div>
 
         <div class="row mt-4 mb-4">
           <div class="col">
-            <!-- <hr class="hr"/> -->
-            <img class="img-fluid" src="./images/Line.png" style="width:200%;">
+            <img class="img-fluid line" 
+                 src="./images/Line.png" 
+                 alt="linia horyzontalna">
           </div>
         </div>
 
@@ -359,17 +405,25 @@
           </div>
           <div class="col-6 text-end">
             <a class="link-footer pe-3" href="tel:000000000">000-000-000</a>
-            <a class="link-footer" href="mailto:giarddesign@kontakt.pl">giarddesign@kontakt.pl</a>
+            <a class="link-footer" 
+               href="mailto:giarddesign@kontakt.pl">
+                giarddesign@kontakt.pl
+            </a>
           </div>
         </div>
+
       <div class="container mb-5 mt-5 space"></div> <!-- For make more space -->
+      
       <div class="row mt-5">
         <div class="col text-start">
-          <p style="color: white;">Prawa zastrzeżone &copy 2022</p>
+          <p class="f-white">Prawa zastrzeżone &copy; 2022</p>
         </div>
         <div class="col text-end">
-          <p style="color: white;">made by <img class="img-fluid" 
-             src="./images/logo-full-light.png"></p>
+          <p class="f-white"> made by 
+            <img class="img-fluid" 
+                 src="./images/logo-full-light.png"
+                 alt="designerskie logo firmy">
+          </p>
         </div>
       </div>
       </div>
