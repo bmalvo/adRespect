@@ -4,11 +4,11 @@ var fullImgBox = document.getElementById("fullImgBox");
 var fullImg = document.getElementById("fullImg");
 
 let imagesGardens = ["./gallery/Photo.png",
- "./gallery/Photo (1).png", "./gallery/Photo (2).png" , 
- "./gallery/Photo (3).png", "./gallery/Photo (4).png", 
- "./gallery/Photo (5).png", "./gallery/Photo (6).png", 
- "./gallery/Photo (7).png", "./gallery/Photo (8).png", 
- "./gallery/Photo (9).png"]
+ "./gallery/Photo(1).png", "./gallery/Photo(2).png" , 
+ "./gallery/Photo(3).png", "./gallery/Photo(4).png", 
+ "./gallery/Photo(5).png", "./gallery/Photo(6).png", 
+ "./gallery/Photo(7).png", "./gallery/Photo(8).png", 
+ "./gallery/Photo(9).png"]
 
 let num = 0;
 
