@@ -45,15 +45,17 @@
           <li class="nav-item">
             <a class="nav-link active" href="#">Kontakt</a>
           </li>
-          <li class="nav-item">
-            <!-- <form class="d-inline nav-item hide">
-              <input class="form-control me-2" type="search" 
+          <li class="nav-item d-flex ps-3 overflow-hidden">
+            <form class="row" id="form-search">
+              <input class="form-control col" type="search" 
                      placeholder="Szukaj">
-              <button class="btn btn-outline-primary float-right" 
+              <button class="col btn btn-outline-success" 
                       type="submit">Szukaj</button>
-            </form> -->
+            </form>
             <a class="nav-link active" href="#">
-              <img src="./images/Icon_01.png" class="img-fluid">
+              <img src="./images/Icon_01.png" 
+                   class="img-fluid ps-3" 
+                   onclick="goForward()">
             </a>
           </li>
         </ul>
