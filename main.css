@@ -106,3 +106,15 @@ hr {
     color: #157347;
     cursor: pointer;
 }
+
+.more {
+    display: none;
+}
+
+.img-opacity {
+    opacity: 0.4;
+}
+
+#trigger {
+    opacity: 0.4;
+}

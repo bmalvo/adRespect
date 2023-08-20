@@ -1,3 +1,5 @@
+// Pop up function in gallery
+
 var fullImgBox = document.getElementById("fullImgBox");
 var fullImg = document.getElementById("fullImg");
 
@@ -65,3 +67,29 @@ document.body.addEventListener("keydown",function(){
         closeButton.click();
     }
 });
+
+// Read more button
+
+function myFunction() {
+    let trigger = document.getElementById("trigger");
+    const opa_imgs = document.querySelectorAll(".img-opacity");
+    const hidden_imgs = document.querySelectorAll(".more")
+
+    if (trigger.style.opacity === "0.4") {
+        opa_imgs.forEach(img => {
+            img.style.opacity = "1"
+        });
+        hidden_imgs.forEach(hidden => {
+            hidden.style.display = 'inline'
+        });
+        trigger.style.opacity = "1";
+    } else {
+            opa_imgs.forEach(img => {
+                img.style.opacity = "0.4"
+            });
+            hidden_imgs.forEach(hidden => {
+            hidden.style.display = 'none'
+        });
+            trigger.style.opacity = "0.4";
+        }
+    };
