@@ -1,15 +1,16 @@
-.intro-section-left {
-    background-color: #dcc1ab;
-}
-
-.ofert-block {
-    background-color: #f5f0ec;
-    padding-bottom: 160px;
+a:hover {
+    color: #1b5b31;
 }
 
 .card {
     border-radius: 10%;
     border: none;
+    width: 18rem;
+}
+
+.card:hover {
+    box-shadow: 3px 3px 4px #1b5b31;
+    transform: translateY(-10px);
 }
 
 .card-link {
@@ -18,67 +19,12 @@
     text-decoration: none;
 }
 
-.card:hover {
-    box-shadow: 3px 3px 4px #1b5b31;
-    transform: translateY(-10px);
+.color-green {
+    background-color: #1b5b31;
 }
 
-a:hover {
-    color: #1b5b31;
-}
-
-.logo {
-    overflow: hidden;
-    animation-name: slidein;
-    animation-timing-function: ease-out;
-    animation-iteration-count: 1;
-    animation-duration: 0.9s;
-}
-
-@keyframes slidein {
-    from {
-        margin-left: -220px;
-    }
-    to {
-        margin-left: 0px;
-    }
-}
-
-.instagram-button:hover {
-    transform: scale(1.1);
-}
-
-hr {
-    background-color:rgb(255, 255, 255);
-    color: white;
-    width: 100%;;
-    height: 3px;
-}
-
-.link-footer {
-    color: white;
-    text-decoration: none;
-}
-
-.link-footer:hover {
-    color: #157347;
-}
-
-.space {
-    height: 2px;
-}
-
-.masonry {
-    column-count: 3;
-    column-gap: 4rem;
-    max-width:max-content;
-}
-
-.masonry img {
-    display: block;
-    max-width: 100%;
-    padding-bottom: 2rem;
-    cursor: pointer;
+.footer-bg {
+    background-color: #111111;
 }
 
 .full-img {
@@ -107,16 +53,79 @@ hr {
     cursor: pointer;
 }
 
-.more {
-    display: none;
+.f-white {
+    color: #f5f0ec;
 }
 
 .img-opacity {
     opacity: 0.4;
 }
 
-#trigger {
-    opacity: 0.4;
+.instagram-button {
+    background-color: #f5f0ec;
+    color: #1b5b31;
+}
+
+.instagram-button:hover {
+    transform: scale(1.1);
+    background-color: #f5f0ec;
+    color: #1b5b31;
+}
+
+.intro-section-left {
+    background-color: #dcc1ab;
+}
+
+.item-nav:hover {
+    box-shadow: #157347 0px 1px 0px;
+}
+
+.line {
+    width: 200%;
+}
+
+.link-footer {
+    color: white;
+    text-decoration: none;
+}
+
+.link-footer:hover {
+    color: #157347;
+}
+
+.logo {
+    overflow: hidden;
+    animation-name: slidein;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-duration: 0.9s;
+}
+
+
+.masonry {
+    column-count: 3;
+    column-gap: 4rem;
+    max-width:max-content;
+}
+
+.masonry img {
+    display: block;
+    max-width: 100%;
+    padding-bottom: 2rem;
+    cursor: pointer;
+}
+
+.more {
+    display: none;
+}
+
+.ofert-block {
+    background-color: #f5f0ec;
+    padding-bottom: 160px;
+}
+
+.space {
+    height: 2px;
 }
 
 #form-search {
@@ -124,6 +133,15 @@ hr {
     transition: 0.7s;
 }
 
-.item-nav:hover {
-    box-shadow: #157347 0px 1px 0px;
+#trigger {
+    opacity: 0.4;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: -220px;
+    }
+    to {
+        margin-left: 0px;
+    }
 }
