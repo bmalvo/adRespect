@@ -123,3 +123,7 @@ hr {
     margin-left: -300px;
     transition: 0.7s;
 }
+
+.item-nav:hover {
+    box-shadow: #157347 0px 1px 0px;
+}
