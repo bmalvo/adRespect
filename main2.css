@@ -1,4 +1,4 @@
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 768px) {}
 
 nav {
     max-width: 1262px;
@@ -6,4 +6,33 @@ nav {
 
 a {
     color: #111111!important;
+}
+
+/* Navi */
+
+#form-search {
+    margin-left: -300px;
+    transition: 0.7s;
+}
+
+.navbar-toggler-icon {
+    background-color: #1b5b31;
+}
+
+.logo {
+    overflow: hidden;
+    animation-name: slidein;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: -220px;
+    }
+
+    to {
+        margin-left: 0px;
+    }
 }

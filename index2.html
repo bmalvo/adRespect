@@ -13,45 +13,60 @@
 <body>
 
     <!-- Navi -->
-  <nav class="navbar navbar-expand-lg mx-auto">
+  <nav class="navbar navbar-expand-md navbar-light mx-auto">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img class="img-fluid" src="./images/giarddesign.png">
+      <a class="navbar-brand ms-5 ms-lg-0" href="#">
+        <img class="img-fluid logo" src="./images/giarddesign.png" alt="logo firmy">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler me-5" type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" 
+               href="#" id="navbarDropdown" 
+               role="button" data-bs-toggle="dropdown">
                         Oferta
             </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Projekty</a></li>
+            <li><a class="dropdown-item" href="#">Wizualizacje</a></li>
+            <li><a class="dropdown-item" href="#">Realizacje</a></li>
           </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">O firmie</a>
+            <a class="nav-link active" href="#">O firmie</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">realizacje</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Kontakt</a>
+            <a class="nav-link" href="#">Kontakt</a>
           </li>
           </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+          <li class="nav-item d-flex ps-3 overflow-hidden">
+            <form class="row" id="form-search"> <!-- hidden form -->
+              <input class="form-control col" 
+                     type="search" 
+                     placeholder="...">
+                <button class="col btn btn-outline-success" 
+                        type="submit">
+                          Szukaj
+                </button>
+            </form>
+            <a class="nav-link me-5 me-lg-0" href="#"> <!-- icon for display form-->
+              <img src="./images/Icon_01.png" 
+                   class="img-fluid ps-3"
+                   alt="ikona lupki" 
+                   onclick="goForward()">
+            </a>
+          </li>
     </div>
   </div>
 </nav>
-<div style="height: 10px; background-color: blue;"></div>
 
     <!-- Hero-block -->
     <!-- Oferta-block -->
