@@ -1,4 +1,14 @@
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    .padding-navbar {
+        padding-top: 24px!important;
+        padding-bottom: 24px!important;
+    .navitem-gap {
+        margin-left: 48px!important;
+    }
+    }
+}
+
+/* Navi */
 
 nav {
     max-width: 1262px;
@@ -8,7 +18,14 @@ a {
     color: #111111!important;
 }
 
-/* Navi */
+.nav-font {
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -1%;
+    color: #111111;
+    text-align: left;
+}
+
 
 #form-search {
     margin-left: -300px;
@@ -25,6 +42,8 @@ a {
     animation-timing-function: ease-out;
     animation-iteration-count: 1;
     animation-duration: 1s;
+    max-width: 114.37px;
+    max-height: 19px;
 }
 
 @keyframes slidein {
@@ -35,4 +54,9 @@ a {
     to {
         margin-left: 0px;
     }
+}
+
+.magnifying-glass {
+    max-width: 19.5px;
+    max-height: 19.5px;
 }
