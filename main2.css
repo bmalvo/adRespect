@@ -1,10 +1,18 @@
 @media only screen and (min-width: 768px) {
+
+    /* Navi */
     .padding-navbar {
         padding-top: 24px!important;
         padding-bottom: 24px!important;
     .navitem-gap {
         margin-left: 48px!important;
     }
+    }
+
+    /* Hero-block */
+    .hero-content{
+        margin-left: 64px!important;
+        max-width: 599px;
     }
 }
 
@@ -15,7 +23,7 @@ nav {
 }
 
 a {
-    color: #111111!important;
+    color: #111111!important; 
 }
 
 .nav-font {
@@ -59,4 +67,27 @@ a {
 .magnifying-glass {
     max-width: 19.5px;
     max-height: 19.5px;
+}
+
+/* hero-block */
+
+.hero-block{
+    max-width: 1440px;
+    max-height: 737px;
+    background-color: #dcc1ab;
+}
+
+.hero-header {
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 0%;
+    text-align: left;
+    max-width: 599px;
+}
+
+.hero-text {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    max-width: 489.01px;
 }
