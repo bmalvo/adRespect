@@ -14,6 +14,10 @@
         margin-left: 64px!important;
         max-width: 599px;
     }
+
+    .hero-slider {
+        margin-left: 64px!important;
+    }
 }
 
 /* Navi */
@@ -90,4 +94,15 @@ a {
     line-height: 150%;
     letter-spacing: 0%;
     max-width: 489.01px;
+}
+
+.btn-hero-1 {
+    width: 208px;
+    height: 50px;
+    border-radius: 200px!important;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 14px;
+    background-color: #1B5B31;
 }
